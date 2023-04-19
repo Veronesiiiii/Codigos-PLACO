@@ -1,0 +1,5 @@
+import requests
+z=requests.get('https://api.openweathermap.org/data/2.5/weather?q=florid&lang=pt&appid=8f3f0550b23e8a1e616cd8c9019113cf&units=metric')
+w=z.json()
+print(w['weather'][0]['description'])
+print(w['main']['temp'])
